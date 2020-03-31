@@ -7,6 +7,14 @@ h1 {
     text-align: center;
 }
 
+h4 {
+    text-align: center;
+}
+
 .nav-link {
     color: white;
+}
+
+.nav-link:hover {
+    color: grey;
 }
