@@ -1,9 +1,10 @@
 body {
     background-color: black;
     color: white;
+    text-align: center;
 }
 
-h1 {
+/* h1 {
     text-align: center;
 }
 
@@ -13,7 +14,7 @@ h4 {
 
 h5 {
     text-align: center;
-}
+} */
 
 .nav-link {
     color: white;
@@ -21,4 +22,8 @@ h5 {
 
 .nav-link:hover {
     color: grey;
+}
+
+#answer {
+    display: none;
 }
