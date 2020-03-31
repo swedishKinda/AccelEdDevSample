@@ -1,10 +1,8 @@
 // const foo = "foo"
 
 $(document).ready(function () {
-    // set up DOM manipulation variables:
-    var displayCarousel = $(".display-slick");
-    displayCarousel.show();
-})
+    $('.display-slick').slick();
+});
 
 
 // var carouselDiv = $(".display-slick");
