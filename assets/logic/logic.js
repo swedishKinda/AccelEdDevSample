@@ -11,10 +11,10 @@ window.onload = function () {
 
 function buttonClick() {
     let healthAnswer = document.getElementById('answer')
-    if (healthAnswer.style.display === "none") {
-        healthAnswer.style.display = "block";
-    } else {
+    if (healthAnswer.style.display === "block") {
         healthAnswer.style.display = "none";
+    } else {
+        healthAnswer.style.display = "block";
     }
 }
 

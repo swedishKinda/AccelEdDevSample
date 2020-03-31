@@ -4,18 +4,6 @@ body {
     text-align: center;
 }
 
-/* h1 {
-    text-align: center;
-}
-
-h4 {
-    text-align: center;
-}
-
-h5 {
-    text-align: center;
-} */
-
 .nav-link {
     color: white;
 }
@@ -26,4 +14,11 @@ h5 {
 
 #answer {
     display: none;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 343px;
+    width: 514px;
 }
