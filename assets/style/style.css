@@ -8,7 +8,15 @@ body {
     color: white;
 }
 
+a {
+    color: white;
+}
+
 .nav-link:hover {
+    color: grey;
+}
+
+a:hover {
     color: grey;
 }
 
