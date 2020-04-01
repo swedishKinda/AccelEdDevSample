@@ -6,7 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script>
+
+        window.onload = () => {
+            document.getElementById("row1col1").addEventListener("click", columnClick1);
+            document.getElementById("row2col1").addEventListener("click", columnClick2);
+            document.getElementById("row3col1").addEventListener("click", columnClick3);
+            document.getElementById("row4col1").addEventListener("click", columnClick4);
+            document.getElementById("row5col1").addEventListener("click", columnClick5);
+            document.getElementById("row6col1").addEventListener("click", columnClick6);
+            document.getElementById("row7col1").addEventListener("click", columnClick7);
+            document.getElementById("row8col1").addEventListener("click", columnClick8);
+        }
+
+        columnClick1 = () => {
+            let socialAnswer = document.getElementById('row1col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
+        }
+
+        columnClick2 = () => {
+            let socialAnswer = document.getElementById('row2col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
+        }
+
+        columnClick3 = () => {
+            let socialAnswer = document.getElementById('row3col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
+        }
+
+        columnClick4 = () => {
+            let socialAnswer = document.getElementById('row4col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
+        }
+
+        columnClick5 = () => {
+            let socialAnswer = document.getElementById('row5col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
+        }
+
+        columnClick6 = () => {
+            let socialAnswer = document.getElementById('row6col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
+        }
+
+        columnClick7 = () => {
+            let socialAnswer = document.getElementById('row7col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
+        }
+
+        columnClick8 = () => {
+            let socialAnswer = document.getElementById('row8col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
+        }
+
+    </script>
     <title>Social Studies</title>
 </head>
 
@@ -26,27 +96,108 @@
                 </li>
             </ul>
         </nav>
-        <div class="col-sm-12">
-            <h1>Words to Know</h1>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Words to Know</h1>
+            </div>
         </div>
-        <div class="col-sm-12">
-            <h4>What words should you know to appreciate the rest of Part I of the novel?</h4>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-12">
+                <h4>What words should you know to appreciate the rest of Part I of the novel?</h4>
+            </div>
         </div>
-        <p class="col-sm-12">
-            Although Miyax has finally made friends with Amaroq and the other wolves in his pack, she is still
-            struggling to survive. Getting Jello to share some meat from his "belly basket" had been a desperate and
-            dangerous move on her part, and she can't rely on this method forever. The next time she tries, he
-            might attack her instead of giving in to his "babysitting" instincts.
-        </p>
-        <p class="col-sm-12">
-            Throughout the rest of Part I of Julie of the Wolves, the protagonist continues her quest to stay alive in
-            spite of the harshness of the elements, a shortage of food, and her loneliness. Some of the words below
-            may be unfamiliar to you, and yet they will be helpful in understanding Miyax's difficult situation even
-            after winning Amaroq's trust.
-        </p>
+        <br>
+        <div class="row">
+            <p class="col-sm-12">
+                Although Miyax has finally made friends with Amaroq and the other wolves in his pack, she is still
+                struggling to survive. Getting Jello to share some meat from his "belly basket" had been a desperate and
+                dangerous move on her part, and she can't rely on this method forever. The next time she tries, he
+                might attack her instead of giving in to his "babysitting" instincts.
+            </p>
+            <p class="col-sm-12">
+                Throughout the rest of Part I of Julie of the Wolves, the protagonist continues her quest to stay alive
+                in
+                spite of the harshness of the elements, a shortage of food, and her loneliness. Some of the words below
+                may be unfamiliar to you, and yet they will be helpful in understanding Miyax's difficult situation even
+                after winning Amaroq's trust.
+            </p>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Term</th>
+                            <th scope="col">Definition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="row1col1">Forage</td>
+                            <td>
+                                <div class="display-none" id="row1col2">Otto</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="row2col1">Mark</td>
+                            <td>
+                                <div class="display-none" id="row2col2">Otto</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="row3col1">Mark</td>
+                            <td>
+                                <div class="display-none" id="row3col2">Otto</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="row4col1">Mark</td>
+                            <td>
+                                <div class="display-none" id="row4col2">Otto</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="row5col1">Mark</td>
+                            <td>
+                                <div class="display-none" id="row5col2">Otto</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="row6col1">Mark</td>
+                            <td>
+                                <div class="display-none" id="row6col2">Otto</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="row7col1">Mark</td>
+                            <td>
+                                <div class="display-none" id="row7col2">Otto</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="row8col1">Mark</td>
+                            <td>
+                                <div class="display-none" id="row8col2">Otto</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-6">
+                <img
+                    src="https://image.shutterstock.com/image-photo/wolf-denali-national-park-alaska-600w-61091524.jpg">
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="row">
+            <div class="copyright col-sm-12">
+                <div>Copyright ©</div>
+            </div>
+        </div>
     </div>
-
-    <script type="text/javascript" src="assets/logic/logic.js"></script>
 
 </body>
 
