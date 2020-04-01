@@ -12,21 +12,19 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
 
-        $(document).ready(function () {
+        $(document).ready(() => {
             $('.display-slick').slick();
         });
 
-        window.onload = function () {
+        window.onload = () => {
             document.getElementById("button").addEventListener("click", buttonClick);
         }
 
-        function buttonClick() {
+        buttonClick = () => {
             let healthAnswer = document.getElementById('answer')
-            if (healthAnswer.style.display === "block") {
-                healthAnswer.style.display = "none";
-            } else {
-                healthAnswer.style.display = "block";
-            }
+            healthAnswer.style.display === "block" ?
+                healthAnswer.style.display = "none" :
+                healthAnswer.style.display = "block"
         }
 
     </script>
