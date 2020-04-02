@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css?family=Roboto+Slab:wght@700|Work+Sans:wght|Muli:wght@600@100&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
 
         window.onload = () => {
@@ -28,53 +28,75 @@
         }
 
         respectOneClick = () => {
-            alert("Take another look at the examples in this lesson.")
+            incorrectAlert()
         }
 
         disrespectOneClick = () => {
-            alert("Good job!")
+            correctAlert()
         }
 
         respectTwoClick = () => {
-            alert("Good job!")
+            correctAlert()
         }
 
         disrespectTwoClick = () => {
-            alert("Take another look at the examples in this lesson.")
+            incorrectAlert()
         }
 
         respectThreeClick = () => {
-            alert("Take another look at the examples in this lesson.")
+            incorrectAlert()
         }
 
         disrespectThreeClick = () => {
-            alert("Good job!")
+            correctAlert()
         }
 
         respectFourClick = () => {
-            alert("Good job!")
+            correctAlert()
         }
 
         disrespectFourClick = () => {
-            alert("Take another look at the examples in this lesson.")
+            incorrectAlert()
         }
 
         respectFiveClick = () => {
-            alert("Take another look at the examples in this lesson.")
+            incorrectAlert()
         }
 
         disrespectFiveClick = () => {
-            alert("Good job!")
+            correctAlert()
         }
 
         respectSixClick = () => {
-            alert("Take another look at the examples in this lesson.")
+            incorrectAlert()
         }
 
         disrespectSixClick = () => {
-            alert("Good job!")
+            correctAlert()
         }
 
+        function correctAlert(msg, myYes) {
+            var confirmBox = $("#correct");
+            confirmBox.find(".message").text(msg);
+            confirmBox.find(".yes").unbind().click(function () {
+                confirmBox.hide();
+            });
+            confirmBox.find(".yes").click(myYes);
+            confirmBox.show();
+            setTimeout(function () { confirmBox.hide(); }, 3000);
+
+        }
+
+        function incorrectAlert(msg, myYes) {
+            var confirmBox = $("#incorrect");
+            confirmBox.find(".message").text(msg);
+            confirmBox.find(".yes").unbind().click(function () {
+                confirmBox.hide();
+            });
+            confirmBox.find(".yes").click(myYes);
+            confirmBox.show();
+            setTimeout(function () { confirmBox.hide(); }, 3000);
+        }
 
     </script>
     <title>English</title>
@@ -227,6 +249,14 @@
                     <a href="social.html">Click Here for Next Lesson!</a>
                 </div>
             </div>
+        </div>
+        <div id="correct">
+            <div class="message">Good Job!</div><br>
+            <button class="yes">OK</button>
+        </div>
+        <div id="incorrect">
+            <div class="message">Take another look at the examples in this lesson.</div><br>
+            <button class="yes">OK</button>
         </div>
         <br><br><br><br>
         <footer class="row">

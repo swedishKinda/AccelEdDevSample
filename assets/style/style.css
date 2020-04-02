@@ -72,3 +72,39 @@ img {
 #social-image {
     margin: 74px 14px 0px 0px;
 }
+
+.question {
+    margin-top: 5px;
+}
+
+#correct {
+    display: none;
+    background-color: green;
+    color: #000000;
+    border: 1px solid #aaa;
+    position: fixed;
+    width: 300px;
+    height: 100px;
+    left: 40%;
+    top: 40%;
+    box-sizing: border-box;
+    text-align: center;
+ }
+
+ #incorrect {
+    display: none;
+    background-color: red;
+    color: #000000;
+    border: 1px solid #aaa;
+    position: fixed;
+    width: 300px;
+    height: 100px;
+    left: 40%;
+    top: 40%;
+    box-sizing: border-box;
+    text-align: center;
+ }
+ 
+ #confirm .message {
+    text-align: left;
+ }
