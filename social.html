@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link
-        href="https://fonts.googleapis.com/css?family=Roboto+Slab:wght@700|Work+Sans:wght|Muli:wght@600@100&display=swap"
+        href="https://fonts.googleapis.com/css?family=Roboto+Slab:wght@700|Work+Sans:wght|Muli:wght@600@100|Dancing+Script|Orbitron&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Social Studies</title>
     <script>
-        
+
         window.onload = () => {
             const respectOne = document.getElementById("respect1").addEventListener("click", respectOneClick)
             const disRespectOne = document.getElementById("disrespect1").addEventListener("click", disrespectOneClick)
@@ -249,13 +249,13 @@
                 </div>
             </div>
         </div>
-        <div id="correct">
+        <div id="correct" class="fadeIn">
             <div class="message">Good Job!</div><br>
-            <button class="ok">OK</button>
+            <button class="ok btn btn-dark">OK</button>
         </div>
-        <div id="incorrect">
+        <div id="incorrect" class="fadeIn">
             <div class="message">Take another look at the examples in this lesson.</div><br>
-            <button class="ok">OK</button>
+            <button class="ok btn btn-dark">OK</button>
         </div>
         <br><br><br><br>
         <footer class="row">
