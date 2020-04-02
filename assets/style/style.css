@@ -92,9 +92,9 @@ img {
     font-family: 'Dancing Script', cursive;
     font-size: 31px;
     -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 #incorrect {
@@ -112,9 +112,9 @@ img {
     font-family: 'Orbitron', sans-serif;
     font-size: 25px;
     -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 @-webkit-keyframes fadeIn {
