@@ -6,100 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link
-        href="https://fonts.googleapis.com/css?family=Roboto+Slab:wght@700|Work+Sans:wght|Muli:wght@600@100&display=swap"
+        href="https://fonts.googleapis.com/css?family=Roboto+Slab:wght@700|Work+Sans:wght@100|Muli:wght@600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <title>English</title>
     <script>
 
         window.onload = () => {
-            const respectOne = document.getElementById("respect1").addEventListener("click", respectOneClick)
-            const disRespectOne = document.getElementById("disrespect1").addEventListener("click", disrespectOneClick)
-            const respectTwo = document.getElementById("respect2").addEventListener("click", respectTwoClick)
-            const disrespectTwo = document.getElementById("disrespect2").addEventListener("click", disrespectTwoClick)
-            const respectThree = document.getElementById("respect3").addEventListener("click", respectThreeClick)
-            const disrespectThree = document.getElementById("disrespect3").addEventListener("click", disrespectThreeClick)
-            const respectFour = document.getElementById("respect4").addEventListener("click", respectFourClick)
-            const disrespectFour = document.getElementById("disrespect4").addEventListener("click", disrespectFourClick)
-            const respectFive = document.getElementById("respect5").addEventListener("click", respectFiveClick)
-            const disrespectFive = document.getElementById("disrespect5").addEventListener("click", disrespectFiveClick)
-            const respectSix = document.getElementById("respect6").addEventListener("click", respectSixClick)
-            const disrespectSix = document.getElementById("disrespect6").addEventListener("click", disrespectSixClick)
+            document.getElementById("row1col1").addEventListener("click", columnClick1);
+            document.getElementById("row2col1").addEventListener("click", columnClick2);
+            document.getElementById("row3col1").addEventListener("click", columnClick3);
+            document.getElementById("row4col1").addEventListener("click", columnClick4);
+            document.getElementById("row5col1").addEventListener("click", columnClick5);
+            document.getElementById("row6col1").addEventListener("click", columnClick6);
+            document.getElementById("row7col1").addEventListener("click", columnClick7);
+            document.getElementById("row8col1").addEventListener("click", columnClick8);
         }
 
-        respectOneClick = () => {
-            incorrectAlert()
+        columnClick1 = () => {
+            let socialAnswer = document.getElementById('row1col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
         }
 
-        disrespectOneClick = () => {
-            correctAlert()
+        columnClick2 = () => {
+            let socialAnswer = document.getElementById('row2col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
         }
 
-        respectTwoClick = () => {
-            correctAlert()
+        columnClick3 = () => {
+            let socialAnswer = document.getElementById('row3col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
         }
 
-        disrespectTwoClick = () => {
-            incorrectAlert()
+        columnClick4 = () => {
+            let socialAnswer = document.getElementById('row4col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
         }
 
-        respectThreeClick = () => {
-            incorrectAlert()
+        columnClick5 = () => {
+            let socialAnswer = document.getElementById('row5col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
         }
 
-        disrespectThreeClick = () => {
-            correctAlert()
+        columnClick6 = () => {
+            let socialAnswer = document.getElementById('row6col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
         }
 
-        respectFourClick = () => {
-            correctAlert()
+        columnClick7 = () => {
+            let socialAnswer = document.getElementById('row7col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
         }
 
-        disrespectFourClick = () => {
-            incorrectAlert()
-        }
-
-        respectFiveClick = () => {
-            incorrectAlert()
-        }
-
-        disrespectFiveClick = () => {
-            correctAlert()
-        }
-
-        respectSixClick = () => {
-            incorrectAlert()
-        }
-
-        disrespectSixClick = () => {
-            correctAlert()
-        }
-
-        function correctAlert(msg, myYes) {
-            var confirmBox = $("#correct");
-            confirmBox.find(".message").text(msg);
-            confirmBox.find(".yes").unbind().click(function () {
-                confirmBox.hide();
-            });
-            confirmBox.find(".yes").click(myYes);
-            confirmBox.show();
-            setTimeout(function () { confirmBox.hide(); }, 3000);
-
-        }
-
-        function incorrectAlert(msg, myYes) {
-            var confirmBox = $("#incorrect");
-            confirmBox.find(".message").text(msg);
-            confirmBox.find(".yes").unbind().click(function () {
-                confirmBox.hide();
-            });
-            confirmBox.find(".yes").click(myYes);
-            confirmBox.show();
-            setTimeout(function () { confirmBox.hide(); }, 3000);
+        columnClick8 = () => {
+            let socialAnswer = document.getElementById('row8col2')
+            socialAnswer.style.display === "block" ?
+                socialAnswer.style.display = "none" :
+                socialAnswer.style.display = "block"
         }
 
     </script>
-    <title>English</title>
 </head>
 
 <body>
@@ -114,10 +95,10 @@
                                 <a class="nav-link" href="index.html" style="padding-right: 29px">Health</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="english.html" style="padding-right: 29px"><u>English</u></a>
+                                <a class="nav-link" href="social.html" style="padding-right: 29px">Social</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="social.html" style="padding-right: 29px">Social</a>
+                                <a class="nav-link" href="english.html" style="padding-right: 29px"><u>English</u></a>
                             </li>
                         </ul>
                     </nav>
@@ -128,135 +109,117 @@
         <div class="global-border border border-info">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1>Practice</h1>
+                    <h1>Words to Know</h1>
                 </div>
             </div>
             <br><br>
             <div class="row">
                 <div class="col-sm-12">
-                    <h4>Respect or disrespect?</h4>
+                    <h4>What words should you know to appreciate the rest of Part I of the novel?</h4>
                 </div>
             </div>
             <br>
             <div class="row">
                 <p class="col-sm-12">
-                    Now that you’ve seen examples of the ways people show one another respect and disrespect, see if you
-                    can classify the following words and actions. Read each item and decide whether it shows respect or
-                    disrespect.
+                    Although Miyax has finally made friends with Amaroq and the other wolves in his pack, she is still
+                    struggling to survive. Getting Jello to share some meat from his "belly basket" had been a desperate
+                    and
+                    dangerous move on her part, and she can't rely on this method forever. The next time she tries, he
+                    might attack her instead of giving in to his "babysitting" instincts.
+                </p>
+                <p class="col-sm-12">
+                    Throughout the rest of Part I of Julie of the Wolves, the protagonist continues her quest to stay
+                    alive
+                    in
+                    spite of the harshness of the elements, a shortage of food, and her loneliness. Some of the words
+                    below
+                    may be unfamiliar to you, and yet they will be helpful in understanding Miyax's difficult situation
+                    even
+                    after winning Amaroq's trust.
                 </p>
             </div>
         </div>
         <br><br>
         <div class="global-border border border-info">
             <div class="row">
-                <p class="col-sm-12">
-                    Janelle is excitedly telling her friend Reina how her job interview went. Reina keeps texting her
-                    boyfriend.
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <button class="btn btn-dark col-sm-2" id="respect1">Respect</button>
-                <div class="col-sm-2"></div>
-                <button class="btn btn-dark col-sm-2" id="disrespect1">Disrespect</button>
-                <div class="col-sm-3"></div>
-            </div>
-        </div>
-        <br><br>
-        <div class="global-border border border-info">
-            <div class="row">
-                <p class="col-sm-12">
-                    “I can see your point about the cost of the streetlights, but what about the nighttime safety of the
-                    people who live in the neighborhood?”
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <button class="btn btn-dark col-sm-2" id="respect2">Respect</button>
-                <div class="col-sm-2"></div>
-                <button class="btn btn-dark col-sm-2" id="disrespect2">Disrespect</button>
-                <div class="col-sm-3"></div>
-            </div>
-        </div>
-        <br><br>
-        <div class="global-border border border-info">
-            <div class="row">
-                <p class="col-sm-12">
-                    All of Ron’s friends keep asking him to go camping with them next month, but he doesn’t enjoy the
-                    outdoors. His friends won’t stop nagging him.
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <button class="btn btn-dark col-sm-2" id="respect3">Respect</button>
-                <div class="col-sm-2"></div>
-                <button class="btn btn-dark col-sm-2" id="disrespect3">Disrespect</button>
-                <div class="col-sm-3"></div>
-            </div>
-        </div>
-        <br><br>
-        <div class="global-border border border-info">
-            <div class="row">
-                <p class="col-sm-12">
-                    Because our cousin LeVar has asthma, we always dust and vacuum before he spends the night at our
-                    house.
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <button class="btn btn-dark col-sm-2" id="respect4">Respect</button>
-                <div class="col-sm-2"></div>
-                <button class="btn btn-dark col-sm-2" id="disrespect4">Disrespect</button>
-                <div class="col-sm-3"></div>
-            </div>
-        </div>
-        <br><br>
-        <div class="global-border border border-info">
-            <div class="row">
-                <p class="col-sm-12">
-                    Stacy, who is frightened of dogs, meets Jarrod and his dog Thor out on a walk. Jarrod says, “Don’t
-                    be
-                    scared, Stacy. Thor is really gentle. Just try rubbing his ears.”
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <button class="btn btn-dark col-sm-2" id="respect5">Respect</button>
-                <div class="col-sm-2"></div>
-                <button class="btn btn-dark col-sm-2" id="disrespect5">Disrespect</button>
-                <div class="col-sm-3"></div>
-            </div>
-        </div>
-        <br><br>
-        <div class="global-border border border-info">
-            <div class="row">
-                <p class="col-sm-12">
-                    I love oyster-flavored Jiffy Snax! Doesn’t everybody?
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <button class="btn btn-dark col-sm-2" id="respect6">Respect</button>
-                <div class="col-sm-2"></div>
-                <button class="btn btn-dark col-sm-2" id="disrespect6">Disrespect</button>
-                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div>Click terms to reveal definitions</div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Term</th>
+                                <th scope="col">Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="row1col1">Forage</td>
+                                <td>
+                                    <div class="display-none" id="row1col2">Search far and wide for food</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="row2col1">Improvisation</td>
+                                <td>
+                                    <div class="display-none" id="row2col2">Creating spontaneously, using whatever is
+                                        available
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="row3col1">Undulating</td>
+                                <td>
+                                    <div class="display-none" id="row3col2">Moving with a wave-like motion</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="row4col1">Eerie</td>
+                                <td>
+                                    <div class="display-none" id="row4col2">Spooky, unsettling</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="row5col1">Writhed</td>
+                                <td>
+                                    <div class="display-none" id="row5col2">Twisted or squirmed, usually in pain</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="row6col1">Tribute</td>
+                                <td>
+                                    <div class="display-none" id="row6col2">An act or gesture of respect and gratitude
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="row7col1">Menacingly</td>
+
+                                <td>
+                                    <div class="display-none" id="row7col2">In a threatening, aggressive way</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="row8col1">Morsel</td>
+                                <td>
+                                    <div class="display-none" id="row8col2">A very small bite of something </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-6">
+                    <img id="social-image"
+                        src="https://image.shutterstock.com/image-photo/wolf-denali-national-park-alaska-600w-61091524.jpg">
+                </div>
             </div>
         </div>
         <br><br>
         <div class="next-button global-border border border-danger">
             <div class="row">
                 <div class="col-sm-12">
-                    <a href="social.html">Click Here for Next Lesson!</a>
+                    <a href="index.html">Click Here to Go Back to Beginning!</a>
                 </div>
             </div>
-        </div>
-        <div id="correct">
-            <div class="message">Good Job!</div><br>
-            <button class="yes">OK</button>
-        </div>
-        <div id="incorrect">
-            <div class="message">Take another look at the examples in this lesson.</div><br>
-            <button class="yes">OK</button>
         </div>
         <br><br><br><br>
         <footer class="row">
