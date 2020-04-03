@@ -16,6 +16,10 @@ p {
     font-family: 'Work Sans', sans-serif;
 }
 
+.navbox {
+    margin-left: 413px;
+}
+
 .nav-link {
     color: white;
     font-family: 'Muli', sans-serif;
