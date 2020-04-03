@@ -28,8 +28,8 @@
             const disrespectSix = document.getElementById("disrespect6").addEventListener("click", disrespectSixClick)
         }
 
-        function correctAlert(msg, myOk) {
-            var confirmBox = $("#correct");
+        correctAlert = (msg, myOk) => {
+            const confirmBox = $("#correct");
             confirmBox.find(".message").text(msg);
             confirmBox.find(".ok").unbind().click(function () {
                 confirmBox.hide();
@@ -39,8 +39,8 @@
             setTimeout(function () { confirmBox.hide(); }, 3000);
         }
 
-        function incorrectAlert(msg, myOk) {
-            var confirmBox = $("#incorrect");
+        incorrectAlert = (msg, myOk) => {
+            const confirmBox = $("#incorrect");
             confirmBox.find(".message").text(msg);
             confirmBox.find(".ok").unbind().click(function () {
                 confirmBox.hide();
