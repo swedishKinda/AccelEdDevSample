@@ -170,3 +170,46 @@ img {
     }
 
 }
+
+@media only screen and (max-width: 414px) {
+    
+    [class*="navborder"] {
+        margin-right: 257px;
+    }
+
+    [class*="navbar"] {
+        margin-right: -14px;    
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    [class*="btn"] {
+        width: 200px;
+        margin: 13px 0px 12px 94px;
+    }
+
+    [class*="next-button"] {
+        margin: auto;
+    }
+
+    [id*="correct"] {
+        margin-left: -157px;
+    }
+
+    [class*="ok"] {
+        margin-left: 0px;
+        margin-top: -3px;
+    }
+
+    [class*="wolf-pic"] {
+        margin-top: -28px;
+    }
+
+    [class*="navbox"] {
+        margin-left: 152px;
+    }
+
+}
