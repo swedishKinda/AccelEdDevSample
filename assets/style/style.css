@@ -69,7 +69,7 @@ img {
     margin: 0px 400px 0px 400px;
 }
 
-#social-image {
+#english-image {
     margin: 74px 14px 0px 0px;
 }
 
@@ -159,6 +159,14 @@ img {
     [class*="ok"] {
         margin-left: 0px;
         margin-top: -3px;
+    }
+
+    [class*="wolf-pic"] {
+        margin-top: -28px;
+    }
+
+    [class*="navbox"] {
+        margin-left: 130px;
     }
 
 }
