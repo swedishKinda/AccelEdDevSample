@@ -16,6 +16,10 @@ p {
     font-family: 'Work Sans', sans-serif;
 }
 
+.underlined {
+    text-decoration: underline;
+}
+
 .navbox {
     margin-left: 413px;
 }
