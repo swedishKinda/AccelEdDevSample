@@ -157,7 +157,7 @@ img {
     }
 
     [id*="correct"] {
-        margin-left: -113px;
+        margin-left: -164px;
     }
 
     [class*="ok"] {
@@ -175,7 +175,7 @@ img {
 
 }
 
-@media only screen and (max-width: 414px) {
+/* @media only screen and (max-width: 414px) {
     
     [class*="navborder"] {
         margin-right: 257px;
@@ -216,4 +216,4 @@ img {
         margin-left: 152px;
     }
 
-}
+} */
