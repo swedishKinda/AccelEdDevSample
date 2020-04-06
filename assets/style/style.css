@@ -22,6 +22,10 @@ p {
     border-radius: 20px;
 }
 
+.ok {
+    background-color: rgba(65, 62, 62, 0.8);
+}
+
 .underlined {
     text-decoration: underline;
 }
