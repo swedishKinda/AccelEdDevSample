@@ -1,5 +1,6 @@
 body {
     background-image: url("../images/board-2167844_1920.jpg");
+    /* Downloaded it to turn it sideways */
     /* Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2167844">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2167844">Pixabay</a> */
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -183,7 +184,7 @@ img {
 
 }
 
-/* @media only screen and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
     
     [class*="navborder"] {
         margin-right: 257px;
@@ -224,4 +225,4 @@ img {
         margin-left: 152px;
     }
 
-} */
+}
