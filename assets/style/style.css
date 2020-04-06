@@ -17,6 +17,11 @@ p {
     font-family: 'Work Sans', sans-serif;
 }
 
+.btn {
+    background-color:  rgba(65, 62, 62, 0.6);
+    border-radius: 20px;
+}
+
 .underlined {
     text-decoration: underline;
 }
@@ -41,7 +46,6 @@ p {
 
 .global-border {
     padding: 10px;
-
 }
 
 a {
