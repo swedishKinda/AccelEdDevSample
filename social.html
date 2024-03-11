@@ -1,272 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css?family=Roboto+Slab:wght@700|Work+Sans:wght|Muli:wght@600@100|Dancing+Script|Orbitron&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:wght@700|Work+Sans:wght|Muli:wght@600@100|Dancing+Script|Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Social Studies</title>
     <script>
+      window.onload = () => {
+        const respectOne = document
+          .getElementById("respect1")
+          .addEventListener("click", respectOneClick);
+        const disRespectOne = document
+          .getElementById("disrespect1")
+          .addEventListener("click", disrespectOneClick);
+        const respectTwo = document
+          .getElementById("respect2")
+          .addEventListener("click", respectTwoClick);
+        const disrespectTwo = document
+          .getElementById("disrespect2")
+          .addEventListener("click", disrespectTwoClick);
+        const respectThree = document
+          .getElementById("respect3")
+          .addEventListener("click", respectThreeClick);
+        const disrespectThree = document
+          .getElementById("disrespect3")
+          .addEventListener("click", disrespectThreeClick);
+        const respectFour = document
+          .getElementById("respect4")
+          .addEventListener("click", respectFourClick);
+        const disrespectFour = document
+          .getElementById("disrespect4")
+          .addEventListener("click", disrespectFourClick);
+        const respectFive = document
+          .getElementById("respect5")
+          .addEventListener("click", respectFiveClick);
+        const disrespectFive = document
+          .getElementById("disrespect5")
+          .addEventListener("click", disrespectFiveClick);
+        const respectSix = document
+          .getElementById("respect6")
+          .addEventListener("click", respectSixClick);
+        const disrespectSix = document
+          .getElementById("disrespect6")
+          .addEventListener("click", disrespectSixClick);
+      };
 
-        window.onload = () => {
-            const respectOne = document.getElementById("respect1").addEventListener("click", respectOneClick)
-            const disRespectOne = document.getElementById("disrespect1").addEventListener("click", disrespectOneClick)
-            const respectTwo = document.getElementById("respect2").addEventListener("click", respectTwoClick)
-            const disrespectTwo = document.getElementById("disrespect2").addEventListener("click", disrespectTwoClick)
-            const respectThree = document.getElementById("respect3").addEventListener("click", respectThreeClick)
-            const disrespectThree = document.getElementById("disrespect3").addEventListener("click", disrespectThreeClick)
-            const respectFour = document.getElementById("respect4").addEventListener("click", respectFourClick)
-            const disrespectFour = document.getElementById("disrespect4").addEventListener("click", disrespectFourClick)
-            const respectFive = document.getElementById("respect5").addEventListener("click", respectFiveClick)
-            const disrespectFive = document.getElementById("disrespect5").addEventListener("click", disrespectFiveClick)
-            const respectSix = document.getElementById("respect6").addEventListener("click", respectSixClick)
-            const disrespectSix = document.getElementById("disrespect6").addEventListener("click", disrespectSixClick)
-        }
+      correctAlert = (msg, myOk) => {
+        const confirmBox = $("#correct");
+        confirmBox.find(".message").text(msg);
+        confirmBox
+          .find(".ok")
+          .unbind()
+          .click(function () {
+            confirmBox.hide();
+          });
+        confirmBox.find(".ok").click(myOk);
+        confirmBox.show();
+      };
 
-        correctAlert = (msg, myOk) => {
-            const confirmBox = $("#correct");
-            confirmBox.find(".message").text(msg);
-            confirmBox.find(".ok").unbind().click(function () {
-                confirmBox.hide();
-            });
-            confirmBox.find(".ok").click(myOk);
-            confirmBox.show();
-            setTimeout(function () { confirmBox.hide(); }, 3000);
-        }
+      incorrectAlert = (msg, myOk) => {
+        const confirmBox = $("#incorrect");
+        confirmBox.find(".message").text(msg);
+        confirmBox
+          .find(".ok")
+          .unbind()
+          .click(function () {
+            confirmBox.hide();
+          });
+        confirmBox.find(".ok").click(myOk);
+        confirmBox.show();
+      };
 
-        incorrectAlert = (msg, myOk) => {
-            const confirmBox = $("#incorrect");
-            confirmBox.find(".message").text(msg);
-            confirmBox.find(".ok").unbind().click(function () {
-                confirmBox.hide();
-            });
-            confirmBox.find(".ok").click(myOk);
-            confirmBox.show();
-            setTimeout(function () { confirmBox.hide(); }, 3000);
-        }
+      respectOneClick = () => {
+        incorrectAlert();
+      };
 
-        respectOneClick = () => {
-            incorrectAlert()
-        }
+      disrespectOneClick = () => {
+        correctAlert();
+      };
 
-        disrespectOneClick = () => {
-            correctAlert()
-        }
+      respectTwoClick = () => {
+        correctAlert();
+      };
 
-        respectTwoClick = () => {
-            correctAlert()
-        }
+      disrespectTwoClick = () => {
+        incorrectAlert();
+      };
 
-        disrespectTwoClick = () => {
-            incorrectAlert()
-        }
+      respectThreeClick = () => {
+        incorrectAlert();
+      };
 
-        respectThreeClick = () => {
-            incorrectAlert()
-        }
+      disrespectThreeClick = () => {
+        correctAlert();
+      };
 
-        disrespectThreeClick = () => {
-            correctAlert()
-        }
+      respectFourClick = () => {
+        correctAlert();
+      };
 
-        respectFourClick = () => {
-            correctAlert()
-        }
+      disrespectFourClick = () => {
+        incorrectAlert();
+      };
 
-        disrespectFourClick = () => {
-            incorrectAlert()
-        }
+      respectFiveClick = () => {
+        incorrectAlert();
+      };
 
-        respectFiveClick = () => {
-            incorrectAlert()
-        }
+      disrespectFiveClick = () => {
+        correctAlert();
+      };
 
-        disrespectFiveClick = () => {
-            correctAlert()
-        }
+      respectSixClick = () => {
+        incorrectAlert();
+      };
 
-        respectSixClick = () => {
-            incorrectAlert()
-        }
-
-        disrespectSixClick = () => {
-            correctAlert()
-        }
-
+      disrespectSixClick = () => {
+        correctAlert();
+      };
     </script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
+      <div class="row">
+        <div class="navbox col-sm-3">
+          <div class="navborder border border-success">
+            <nav class="navbar navbar-expand-sm">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="index.html"
+                    style="padding-right: 29px"
+                    >Health</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="social.html"
+                    style="padding-right: 29px"
+                  >
+                    <div class="underlined">Social</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="english.html"
+                    style="padding-right: 29px"
+                    >English</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="global-border border border-info">
+        <div class="row mt-3">
+          <div class="col-sm-12">
+            <h1>Lorem Ipsum</h1>
+          </div>
+        </div>
+
         <div class="row">
-            <div class="navbox col-sm-3">
-                <div class="navborder border border-success">
-                    <nav class="navbar navbar-expand-sm">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html" style="padding-right: 29px">Health</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="social.html" style="padding-right: 29px">
-                                    <div class="underlined">Social</div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="english.html" style="padding-right: 29px">English</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+          <div class="col-sm-12">
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+          </div>
         </div>
-        <br><br>
-        <div class="global-border border border-info">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1>Practice</h1>
-                </div>
-            </div>
-            <br><br>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h4>Respect or disrespect?</h4>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <p class="col-sm-12">
-                    Now that you’ve seen examples of the ways people show one another respect and disrespect, see if you
-                    can classify the following words and actions. Read each item and decide whether it shows respect or
-                    disrespect.
-                </p>
-            </div>
+
+        <div class="row text-left px-4">
+          <div class="col-sm-12">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              tristique dapibus sem sit amet dictum. Phasellus tempor diam non
+              mattis suscipit. Donec consectetur rhoncus magna nec molestie.
+              Maecenas id eros lorem. Donec bibendum, sem non luctus imperdiet,
+              lectus libero pharetra libero, non sollicitudin leo felis ac eros.
+              Cras a porttitor odio, nec rhoncus odio. Nulla facilisi. Donec
+              quis dolor ac sapien facilisis varius.
+            </p>
+          </div>
         </div>
-        <br><br>
-        <div class="global-border border border-info">
-            <div class="row">
-                <p class="col-sm-12">
-                    Janelle is excitedly telling her friend Reina how her job interview went. Reina keeps texting her
-                    boyfriend.
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <button class="btn btn-dark col-sm-2" id="respect1">Respect</button>
-                <div class="col-sm-2"></div>
-                <button class="btn btn-dark col-sm-2" id="disrespect1">Disrespect</button>
-                <div class="col-sm-3"></div>
-            </div>
+      </div>
+
+      <div class="global-border border border-info">
+        <div class="row">
+          <p class="col-sm-12 text-left px-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique dapibus sem sit amet dictum.
+          </p>
         </div>
-        <br><br>
-        <div class="global-border border border-info">
-            <div class="row">
-                <p class="col-sm-12">
-                    “I can see your point about the cost of the streetlights, but what about the nighttime safety of the
-                    people who live in the neighborhood?”
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <button class="btn btn-dark col-sm-2" id="respect2">Respect</button>
-                <div class="col-sm-2"></div>
-                <button class="btn btn-dark col-sm-2" id="disrespect2">Disrespect</button>
-                <div class="col-sm-3"></div>
-            </div>
+        <div class="row mb-3">
+          <div class="col-sm-3"></div>
+          <button class="btn btn-dark col-sm-2" id="respect1">Lorem</button>
+          <div class="col-sm-2"></div>
+          <button class="btn btn-dark col-sm-2" id="disrespect1">
+            Ipsum
+          </button>
+          <div class="col-sm-3"></div>
         </div>
-        <br><br>
-        <div class="global-border border border-info">
-            <div class="row">
-                <p class="col-sm-12">
-                    All of Ron’s friends keep asking him to go camping with them next month, but he doesn’t enjoy the
-                    outdoors. His friends won’t stop nagging him.
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <button class="btn btn-dark col-sm-2" id="respect3">Respect</button>
-                <div class="col-sm-2"></div>
-                <button class="btn btn-dark col-sm-2" id="disrespect3">Disrespect</button>
-                <div class="col-sm-3"></div>
-            </div>
+      </div>
+
+      <div class="global-border border border-info">
+        <div class="row">
+          <p class="col-sm-12 text-left px-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique dapibus sem sit amet dictum.
+          </p>
         </div>
-        <br><br>
-        <div class="global-border border border-info">
-            <div class="row">
-                <p class="col-sm-12">
-                    Because our cousin LeVar has asthma, we always dust and vacuum before he spends the night at our
-                    house.
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <button class="btn btn-dark col-sm-2" id="respect4">Respect</button>
-                <div class="col-sm-2"></div>
-                <button class="btn btn-dark col-sm-2" id="disrespect4">Disrespect</button>
-                <div class="col-sm-3"></div>
-            </div>
+        <div class="row mb-3">
+          <div class="col-sm-3"></div>
+          <button class="btn btn-dark col-sm-2" id="respect2">Lorem</button>
+          <div class="col-sm-2"></div>
+          <button class="btn btn-dark col-sm-2" id="disrespect2">
+            Ipsum
+          </button>
+          <div class="col-sm-3"></div>
         </div>
-        <br><br>
-        <div class="global-border border border-info">
-            <div class="row">
-                <p class="col-sm-12">
-                    Stacy, who is frightened of dogs, meets Jarrod and his dog Thor out on a walk. Jarrod says, “Don’t
-                    be
-                    scared, Stacy. Thor is really gentle. Just try rubbing his ears.”
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <button class="btn btn-dark col-sm-2" id="respect5">Respect</button>
-                <div class="col-sm-2"></div>
-                <button class="btn btn-dark col-sm-2" id="disrespect5">Disrespect</button>
-                <div class="col-sm-3"></div>
-            </div>
+      </div>
+
+      <div class="global-border border border-info">
+        <div class="row">
+          <p class="col-sm-12 text-left px-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique dapibus sem sit amet dictum.
+          </p>
         </div>
-        <br><br>
-        <div class="global-border border border-info">
-            <div class="row">
-                <p class="col-sm-12">
-                    I love oyster-flavored Jiffy Snax! Doesn’t everybody?
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <button class="btn btn-dark col-sm-2" id="respect6">Respect</button>
-                <div class="col-sm-2"></div>
-                <button class="btn btn-dark col-sm-2" id="disrespect6">Disrespect</button>
-                <div class="col-sm-3"></div>
-            </div>
+        <div class="row mb-3">
+          <div class="col-sm-3"></div>
+          <button class="btn btn-dark col-sm-2" id="respect3">Lorem</button>
+          <div class="col-sm-2"></div>
+          <button class="btn btn-dark col-sm-2" id="disrespect3">
+            Ipsum
+          </button>
+          <div class="col-sm-3"></div>
         </div>
-        <br><br>
-        <div class="next-button global-border border border-danger">
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="english.html">Click Here for Next Lesson!</a>
-                </div>
-            </div>
+      </div>
+
+      <div class="global-border border border-info">
+        <div class="row">
+          <p class="col-sm-12 text-left px-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique dapibus sem sit amet dictum.
+          </p>
         </div>
-        <div id="correct" class="fadeIn">
-            <div class="message">Good Job!</div><br>
-            <button class="ok btn btn-dark">OK</button>
+        <div class="row mb-3">
+          <div class="col-sm-3"></div>
+          <button class="btn btn-dark col-sm-2" id="respect4">Lorem</button>
+          <div class="col-sm-2"></div>
+          <button class="btn btn-dark col-sm-2" id="disrespect4">
+            Ipsum
+          </button>
+          <div class="col-sm-3"></div>
         </div>
-        <div id="incorrect" class="fadeIn">
-            <div class="message">Take another look at the examples in this lesson.</div><br>
-            <button class="ok btn btn-dark">OK</button>
+      </div>
+
+      <div class="global-border border border-info">
+        <div class="row">
+          <p class="col-sm-12 text-left px-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique dapibus sem sit amet dictum.
+          </p>
         </div>
-        <br><br><br><br>
-        <footer class="row">
-            <div class="copyright col-sm-12">
-                <div>Copyright ©</div>
-            </div>
-        </footer>
+        <div class="row mb-3">
+          <div class="col-sm-3"></div>
+          <button class="btn btn-dark col-sm-2" id="respect5">Lorem</button>
+          <div class="col-sm-2"></div>
+          <button class="btn btn-dark col-sm-2" id="disrespect5">
+            Ipsum
+          </button>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+
+      <div class="global-border border border-info">
+        <div class="row">
+          <p class="col-sm-12 text-left px-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique dapibus sem sit amet dictum.
+          </p>
+        </div>
+        <div class="row mb-3">
+          <div class="col-sm-3"></div>
+          <button class="btn btn-dark col-sm-2" id="respect6">Lorem</button>
+          <div class="col-sm-2"></div>
+          <button class="btn btn-dark col-sm-2" id="disrespect6">
+            Ipsum
+          </button>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+
+      <div class="next-button global-border border border-danger">
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="english.html">Click Here for Next Lesson!</a>
+          </div>
+        </div>
+      </div>
+      <div id="correct" class="fadeIn">
+        <div class="message p-4">Good Job!</div>
+        <br />
+        <button class="ok btn btn-dark">OK</button>
+      </div>
+      <div id="incorrect" class="fadeIn">
+        <div class="message p-4">
+          Take another look at the examples in this lesson.
+        </div>
+        <br />
+        <button class="ok btn btn-dark">OK</button>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>

@@ -13,8 +13,13 @@ h1 {
     font-family: 'Roboto Slab', serif;
 }
 
+h5 {
+    margin: 1em auto 1em auto;
+}
+
 p {
     font-family: 'Work Sans', sans-serif;
+    margin: 1em auto 1em auto;
 }
 
 .btn {
@@ -51,6 +56,7 @@ p {
 
 .global-border {
     padding: 10px;
+    margin: 3em auto;
 }
 
 a {
@@ -79,20 +85,17 @@ a:hover {
 
 img {
     margin: 0px auto 0px auto;
-    height: 343px;
-    width: 514px;
+    max-width: 514px;
+    width: 100%
 }
 
 .next-button {
-    margin: 0px 400px 0px 400px;
+    margin: 0 auto 3em auto;
+    max-width: 400px;
 }
 
 #english-image {
     margin: 74px 14px 0px 0px;
-}
-
-.question {
-    margin-top: 5px;
 }
 
 #table-instructions {
@@ -106,7 +109,7 @@ img {
     border: 2px solid black;
     position: fixed;
     width: 300px;
-    height: 158px;
+    height: 250px;
     margin-left: 406px;
     top: 40%;
     box-sizing: border-box;
@@ -126,7 +129,7 @@ img {
     border: 2px solid black;
     position: fixed;
     width: 300px;
-    height: 205px;
+    height: 300px;
     margin-left: 406px;
     top: 40%;
     box-sizing: border-box;
